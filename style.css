@@ -44,7 +44,7 @@ body {
 
 form {
     margin: 0 auto;
-    text-align: center; /* center everything inside the form */
+    text-align: center;
 }
 
 label, input, select, button {
