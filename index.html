@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ceramah Profesional</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -11,14 +11,14 @@
     <h1>Ceramah Profesional Web Development</h1>
 
     <div class="info">
-        <img src="farizah.png" alt="Penceramah">
-        <p><strong>Penceramah:</strong> Pensyarah Pakar Web Development</p>
-        <p><strong>Sinopsis:</strong> Ceramah ini memberi pendedahan mendalam tentang pembangunan laman web moden.</p>
-        <p><strong>Tarikh:</strong> 30 Mac 2026</p>
-        <p><strong>Masa:</strong> 9.00 pagi – 5.00 petang</p>
-        <p><strong>Lokasi:</strong> Dewan Utama Politeknik</p>
-        <p><strong>Yuran:</strong> RM2500.00 / slot</p>
-        <p><strong>Hubungan:</strong> ceramah@email.com</p>
+        <img src= -- alt="Penceramah" class="speaker-img">
+    <p><strong>Penceramah:</strong> Pensyarah Pakar Web Development</p>
+    <p><strong>Sinopsis:</strong> Ceramah ini memberi pendedahan mendalam tentang pembangunan laman web moden.</p>
+    <p><strong>Tarikh:</strong> 30 Mac 2026</p>
+    <p><strong>Masa:</strong> 9.00 pagi – 5.00 petang</p>
+    <p><strong>Lokasi:</strong> Dewan Utama Politeknik</p>
+    <p><strong>Yuran:</strong> RM2500.00 / slot</p>
+    <p><strong>Hubungan:</strong> ceramah@email.com</p>
     </div>
 </section>
 
@@ -27,30 +27,32 @@
 
     <form id="ceramahForm">
         <label>Nama Penuh</label>
-        <input type="text" id="nama" required>
+        <input type="text" id="nama" required> <br>  <br>
 
         <label>Email</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" required> <br>  <br>
 
         <label>No Telefon</label>
-        <input type="text" id="telefon" required>
+        <input type="text" id="telefon" required>  <br>  <br>
 
         <label>Kategori Peserta</label>
         <select id="kategori">
             <option>Pelajar</option>
             <option>Pensyarah</option>
         </select>
+         <br>  <br>
 
         <label>Bilangan Slot</label>
-        <input type="number" id="slot" min="1" required>
+        <input type="number" id="slot" min="1" required>  <br>  <br>
 
         <label>Bukti Pembayaran</label>
-        <input type="file" required>
+        <input type="file" required>  <br>  <br>
 
         <label>
             <input type="checkbox" id="terma" required>
             Saya bersetuju dengan terma & syarat
         </label>
+         <br>  <br>
 
         <button type="submit">Hantar</button>
     </form>
