@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+    background: #1e293b;
+    color: white;
+    padding: 30px;
+}
+
+.info img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.form-section {
+    padding: 30px;
+    background: white;
+}
+
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#pengesahan {
+    margin: 30px;
+    padding: 20px;
+    background: #d1fae5;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}

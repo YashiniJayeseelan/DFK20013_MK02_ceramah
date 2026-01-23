@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Ceramah Profesional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="landing">
+    <h1>Ceramah Profesional Web Development</h1>
+
+    <div class="info">
+        <img src="images/penceramah.jpg" alt="Penceramah">
+        <p><strong>Penceramah:</strong> Pensyarah Pakar Web Development</p>
+        <p><strong>Sinopsis:</strong> Ceramah ini memberi pendedahan mendalam tentang pembangunan laman web moden.</p>
+        <p><strong>Tarikh:</strong> 30 Mac 2026</p>
+        <p><strong>Masa:</strong> 9.00 pagi – 5.00 petang</p>
+        <p><strong>Lokasi:</strong> Dewan Utama Politeknik</p>
+        <p><strong>Yuran:</strong> RM2500.00 / slot</p>
+        <p><strong>Hubungan:</strong> ceramah@email.com</p>
+    </div>
+</section>
+
+<section class="form-section">
+    <h2>Borang Pendaftaran</h2>
+
+    <form id="ceramahForm">
+        <label>Nama Penuh</label>
+        <input type="text" id="nama" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>No Telefon</label>
+        <input type="text" id="telefon" required>
+
+        <label>Kategori Peserta</label>
+        <select id="kategori">
+            <option>Pelajar</option>
+            <option>Pensyarah</option>
+        </select>
+
+        <label>Bilangan Slot</label>
+        <input type="number" id="slot" min="1" required>
+
+        <label>Bukti Pembayaran</label>
+        <input type="file" required>
+
+        <label>
+            <input type="checkbox" id="terma" required>
+            Saya bersetuju dengan terma & syarat
+        </label>
+
+        <button type="submit">Hantar</button>
+    </form>
+</section>
+
+<section id="pengesahan" class="hidden"></section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
