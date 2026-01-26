@@ -1,6 +1,16 @@
-/* ===== BODY : TEXTURED + CONTRAST ===== */
+/* ===== GLOBAL STYLES ===== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background:
         linear-gradient(135deg, #0f172a, #1e3a8a),
         repeating-linear-gradient(
@@ -10,27 +20,68 @@ body {
             transparent 1px,
             transparent 4px
         );
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
-/* ===== LANDING SECTION ===== */
+/* ===== CARD SECTIONS ===== */
+.landing, .form-section, #pengesahan {
+    border-radius: 16px;
+    padding: 35px;
+    max-width: 850px;
+    width: 90%;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    margin: 30px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .landing {
     background: rgba(30, 41, 59, 0.95);
-    color: white;
-    padding: 40px;
-    width: 90%;
-    max-width: 850px;
-    border-radius: 16px;
-    margin-top: 30px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    color: #fff;
 }
 
-/* ===== INFO ===== */
+.form-section {
+    max-width: 520px;
+    background:
+        linear-gradient(#f8fafc, #e2e8f0),
+        repeating-linear-gradient(
+            45deg,
+            rgba(0,0,0,0.02),
+            rgba(0,0,0,0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+}
+
+.form-section:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 25px 50px rgba(0,0,0,0.35),
+        0 12px 25px rgba(0,0,0,0.2);
+}
+
+#pengesahan {
+    background:
+        linear-gradient(#ecfdf5, #d1fae5),
+        repeating-linear-gradient(
+            45deg,
+            rgba(0,0,0,0.02),
+            rgba(0,0,0,0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+    max-width: 620px;
+    text-align: left;
+}
+
+#pengesahan h2 { text-align: center; color: #065f46; }
+#pengesahan h3 {
+    border-left: 5px solid #10b981;
+    padding-left: 12px;
+    margin-top: 25px;
+    color: #064e3b;
+}
+#pengesahan hr { margin: 20px 0; }
+
+/* ===== INFO SECTION ===== */
 .info {
     margin-top: 20px;
 }
@@ -42,45 +93,14 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* ===== FORM SECTION (TEXTURED CARD) ===== */
-.form-section {
-    padding: 35px;
-    background:
-        linear-gradient(#f8fafc, #e2e8f0),
-        repeating-linear-gradient(
-            45deg,
-            rgba(0,0,0,0.02),
-            rgba(0,0,0,0.02) 1px,
-            transparent 1px,
-            transparent 4px
-        );
-    width: 90%;
-    max-width: 520px;
-    border-radius: 18px;
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.25),
-        0 8px 15px rgba(0, 0, 0, 0.15);
-
-    margin: 40px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-section:hover {
-    transform: translateY(-4px);
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.35),
-        0 12px 25px rgba(0, 0, 0, 0.2);
-}
-
 /* ===== FORM ELEMENTS ===== */
 label, input, select, button {
-    display: block;
     width: 80%;
     margin: 12px auto;
 }
 
 input, select {
+    display: block;
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #cbd5f5;
@@ -103,46 +123,15 @@ button {
     font-weight: bold;
 }
 
-button:hover {
-    background: #1e40af;
-}
+button:hover { background: #1e40af; }
 
-/* ===== OUTPUT / CONFIRMATION ===== */
-#pengesahan {
-    background:
-        linear-gradient(#ecfdf5, #d1fae5),
-        repeating-linear-gradient(
-            45deg,
-            rgba(0,0,0,0.02),
-            rgba(0,0,0,0.02) 1px,
-            transparent 1px,
-            transparent 4px
-        );
-    padding: 30px;
-    border-radius: 18px;
-    max-width: 620px;
-    margin-bottom: 50px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-    text-align: left;
-}
-
-#pengesahan h2 {
-    text-align: center;
-    color: #065f46;
-}
-
-#pengesahan h3 {
-    border-left: 5px solid #10b981;
-    padding-left: 12px;
-    margin-top: 25px;
-    color: #064e3b;
-}
-
-#pengesahan hr {
-    margin: 20px 0;
+/* ===== CHECKBOX INLINE ===== */
+.checkbox-label {
+    display: flex;
+    align-items: auto;
+    gap: 8px;
+    cursor: pointer;
 }
 
 /* ===== UTIL ===== */
-.hidden {
-    display: none;
-}
+.hidden { display: none; }
