@@ -1,6 +1,15 @@
+/* ===== BODY : TEXTURED + CONTRAST ===== */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #e5e7eb, #cbd5f5);
+    background:
+        linear-gradient(135deg, #0f172a, #1e3a8a),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.03),
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px,
+            transparent 4px
+        );
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,16 +18,19 @@ body {
     text-align: center;
 }
 
+/* ===== LANDING SECTION ===== */
 .landing {
-    background: #1e293b;
+    background: rgba(30, 41, 59, 0.95);
     color: white;
-    padding: 30px;
+    padding: 40px;
     width: 90%;
-    max-width: 800px;
-    border-radius: 10px;
-    margin-top: 20px;
+    max-width: 850px;
+    border-radius: 16px;
+    margin-top: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
 
+/* ===== INFO ===== */
 .info {
     margin-top: 20px;
 }
@@ -26,54 +38,111 @@ body {
 .info img.speaker-img {
     max-width: 200px;
     margin: 20px auto;
-    border-radius: 8px;
-}
-
-.form-section {
-    padding: 30px;
-    background: white;
-    width: 90%;
-    max-width: 500px;
     border-radius: 10px;
-    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
+/* ===== FORM SECTION (TEXTURED CARD) ===== */
+.form-section {
+    padding: 35px;
+    background:
+        linear-gradient(#f8fafc, #e2e8f0),
+        repeating-linear-gradient(
+            45deg,
+            rgba(0,0,0,0.02),
+            rgba(0,0,0,0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+    width: 90%;
+    max-width: 520px;
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25),
+        0 8px 15px rgba(0, 0, 0, 0.15);
+
+    margin: 40px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.35),
+        0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== FORM ELEMENTS ===== */
 label, input, select, button {
     display: block;
     width: 80%;
-    margin: 10px auto;
+    margin: 12px auto;
 }
 
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5f5;
+    background: #f8fafc;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* ===== BUTTON ===== */
 button {
     background: #2563eb;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
     background: #1e40af;
 }
 
+/* ===== OUTPUT / CONFIRMATION ===== */
 #pengesahan {
-    background: #d1fae5;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin-bottom: 40px;
+    background:
+        linear-gradient(#ecfdf5, #d1fae5),
+        repeating-linear-gradient(
+            45deg,
+            rgba(0,0,0,0.02),
+            rgba(0,0,0,0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+    padding: 30px;
+    border-radius: 18px;
+    max-width: 620px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    text-align: left;
+}
+
+#pengesahan h2 {
+    text-align: center;
+    color: #065f46;
 }
 
 #pengesahan h3 {
-    color: #065f46;
-    margin-top: 20px;
+    border-left: 5px solid #10b981;
+    padding-left: 12px;
+    margin-top: 25px;
+    color: #064e3b;
 }
 
 #pengesahan hr {
     margin: 20px 0;
 }
 
+/* ===== UTIL ===== */
 .hidden {
     display: none;
 }
