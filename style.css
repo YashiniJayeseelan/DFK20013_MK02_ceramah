@@ -5,13 +5,13 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center horizontally */
-    text-align: center;  /* center all text by default */
+    align-items: center;
+    text-align: center;
 }
 
 .landing {
     background: #1e293b;
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 30px;
     width: 90%;
     max-width: 800px;
@@ -25,26 +25,17 @@ body {
 
 .info img.speaker-img {
     max-width: 200px;
-    width: 100%;
-    height: auto;
-    display: block;
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .form-section {
     padding: 30px;
-    background: rgb(255, 255, 255);
+    background: white;
     width: 90%;
     max-width: 500px;
     border-radius: 10px;
     margin: 20px 0;
-}
-
-form {
-    margin: 0 auto;
-    text-align: center;
 }
 
 label, input, select, button {
@@ -54,14 +45,12 @@ label, input, select, button {
 }
 
 button {
-    margin-top: 20px;
     background: #2563eb;
     color: white;
     border: none;
-    cursor: pointer;
     padding: 10px;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    cursor: pointer;
 }
 
 button:hover {
@@ -69,12 +58,20 @@ button:hover {
 }
 
 #pengesahan {
-    margin: 30px auto;
-    padding: 20px;
     background: #d1fae5;
+    padding: 25px;
     border-radius: 10px;
-    max-width: 500px;
-    text-align: center;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+#pengesahan h3 {
+    color: #065f46;
+    margin-top: 20px;
+}
+
+#pengesahan hr {
+    margin: 20px 0;
 }
 
 .hidden {
