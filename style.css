@@ -145,13 +145,13 @@ button:hover { background: #1e40af; }
 }
 
 .pengesahan-table th {
-    background: #10b981;
+    background: #8d0606;
     color: white;
     text-align: center;
     font-size: 1rem;
 }
 
 .pengesahan-table tr:last-child th {
-    background: #065f46;
+    background: #8d0606;
     font-size: 1.1rem;
 }
