@@ -1,4 +1,3 @@
-/* ===== GLOBAL STYLES ===== */
 * {
     box-sizing: border-box;
 }
@@ -22,7 +21,6 @@ body {
         );
 }
 
-/* ===== CARD SECTIONS ===== */
 .landing, .form-section, #pengesahan {
     border-radius: 16px;
     padding: 35px;
@@ -81,7 +79,6 @@ body {
 }
 #pengesahan hr { margin: 20px 0; }
 
-/* ===== INFO SECTION ===== */
 .info {
     margin-top: 20px;
 }
@@ -93,7 +90,6 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* ===== FORM ELEMENTS ===== */
 label, input, select, button {
     width: 80%;
     margin: 12px auto;
@@ -112,7 +108,6 @@ input:focus, select:focus {
     border-color: #2563eb;
 }
 
-/* ===== BUTTON ===== */
 button {
     background: #2563eb;
     color: white;
@@ -125,7 +120,6 @@ button {
 
 button:hover { background: #1e40af; }
 
-/* ===== CHECKBOX INLINE ===== */
 .checkbox-label {
     display: flex;
     align-items: auto;
@@ -133,5 +127,31 @@ button:hover { background: #1e40af; }
     cursor: pointer;
 }
 
-/* ===== UTIL ===== */
 .hidden { display: none; }
+.pengesahan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pengesahan-table th,
+.pengesahan-table td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+.pengesahan-table th {
+    background: #10b981;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.pengesahan-table tr:last-child th {
+    background: #065f46;
+    font-size: 1.1rem;
+}

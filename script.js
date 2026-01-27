@@ -1,44 +1,62 @@
-document.getElementById("ceramahForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+pengesahan.innerHTML = `
+    <h2>Pengesahan Pendaftaran</h2>
 
-    const nama = document.getElementById("nama").value;
-    const email = document.getElementById("email").value;
-    const telefon = document.getElementById("telefon").value;
-    const kategori = document.getElementById("kategori").value;
-    const slot = document.getElementById("slot").value;
+    <table class="pengesahan-table">
+        <tr>
+            <th colspan="2">Maklumat Ceramah</th>
+        </tr>
+        <tr>
+            <td>Tajuk</td>
+            <td>Ceramah Profesional Web Development</td>
+        </tr>
+        <tr>
+            <td>Penceramah</td>
+            <td>Pensyarah Pakar Web Development</td>
+        </tr>
+        <tr>
+            <td>Tarikh</td>
+            <td>30 Mac 2026</td>
+        </tr>
+        <tr>
+            <td>Masa</td>
+            <td>9.00 pagi – 5.00 petang</td>
+        </tr>
+        <tr>
+            <td>Lokasi</td>
+            <td>Dewan Utama Politeknik</td>
+        </tr>
+        <tr>
+            <td>Yuran</td>
+            <td>RM 50.00 / slot</td>
+        </tr>
 
-    const hargaSeunit = 50;
-    const jumlah = hargaSeunit * slot;
+        <tr>
+            <th colspan="2">Maklumat Peserta</th>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>${nama}</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>${email}</td>
+        </tr>
+        <tr>
+            <td>No Telefon</td>
+            <td>${telefon}</td>
+        </tr>
+        <tr>
+            <td>Kategori</td>
+            <td>${kategori}</td>
+        </tr>
+        <tr>
+            <td>Bilangan Slot</td>
+            <td>${slot}</td>
+        </tr>
 
-    const pengesahan = document.getElementById("pengesahan");
-
-    pengesahan.innerHTML = `
-        <h2>Pengesahan Pendaftaran</h2>
-
-        <hr>
-
-        <h3>Maklumat Ceramah</h3>
-        <p><strong>Tajuk:</strong> Ceramah Profesional Web Development</p>
-        <p><strong>Penceramah:</strong> Pensyarah Pakar Web Development</p>
-        <p><strong>Tarikh:</strong> 30 Mac 2026</p>
-        <p><strong>Masa:</strong> 9.00 pagi – 5.00 petang</p>
-        <p><strong>Lokasi:</strong> Dewan Utama Politeknik</p>
-        <p><strong>Yuran:</strong> RM50.00 / slot</p>
-
-        <hr>
-
-        <h3>Maklumat Peserta</h3>
-        <p><strong>Nama:</strong> ${nama}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>No Telefon:</strong> ${telefon}</p>
-        <p><strong>Kategori:</strong> ${kategori}</p>
-        <p><strong>Bilangan Slot:</strong> ${slot}</p>
-
-        <hr>
-
-        <h3>Jumlah Bayaran</h3>
-        <p><strong>RM ${jumlah.toFixed(2)}</strong></p>
-    `;
-
-    pengesahan.classList.remove("hidden");
-});
+        <tr>
+            <th>Jumlah Bayaran</th>
+            <th>RM ${jumlah.toFixed(2)}</th>
+        </tr>
+    </table>
+`;
