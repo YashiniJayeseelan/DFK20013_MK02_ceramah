@@ -5,14 +5,14 @@ document.getElementById("ceramahForm").addEventListener("submit", function (e) {
     const email = document.getElementById("email").value;
     const telefon = document.getElementById("telefon").value;
     const kategori = document.getElementById("kategori").value;
-    const slot = document.getElementById("slot").value;
+    const slot = parseInt(document.getElementById("slot").value); // CHANGED
 
     const hargaSeunit = 50;
     const jumlah = hargaSeunit * slot;
 
     const pengesahan = document.getElementById("pengesahan");
 
-    pengesahan.innerHTML = `
+    let html = `  <!-- CHANGED -->
         <h2>Pengesahan Pendaftaran</h2>
 
         <table class="pengesahan-table">
@@ -75,5 +75,6 @@ document.getElementById("ceramahForm").addEventListener("submit", function (e) {
         </table>
     `;
 
+    pengesahan.innerHTML = html; // CHANGED
     pengesahan.classList.remove("hidden");
 });

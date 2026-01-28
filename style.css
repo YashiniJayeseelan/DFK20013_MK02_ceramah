@@ -122,7 +122,7 @@ button:hover { background: #1e40af; }
 
 .checkbox-label {
     display: flex;
-    align-items: auto;
+    align-items: center;
     gap: 8px;
     cursor: pointer;
 }
